@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+class Books{
+    public:
+
+    int page;
+    double price;
+};
+
+class Fiction: public Books{
+    public:
+    
+    string name;
+};
+
+int main(){
+
+    Fiction b1;
+    b1.page=300;
+    b1.price=700.75;
+    b1.name="Arabian Nights";
+
+    cout<<"No. of Pages: "<<b1.page<<endl;
+    cout<<"Price: "<<b1.price<<endl;
+    cout<<"Name: "<<b1.name<<endl;
+
+    return 0;
+}
+
+
+/*     OUTPUT
+No. of Pages: 300
+Price: 700.75
+Name: Arabian Nights
+*/
